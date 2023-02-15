@@ -7,7 +7,7 @@ Este diplomado es para aprender Js y la libreria de React Js.
 - [Yurley Sanchez](https://github.com/Yursksf1) -- Yursksf1
 - [Carlos Gomez](https://github.com/cgomez2305)
 - [Camilo Rondon](https://github.com/CamiloRondonDev) --Camilo
-- [Jheins Granados](https://github.com/jheins7)
+- [Jheins Granados](https://github.com/jheins7) -- jheins7
 - [ivan diaz](https://github.com/ivandiaz1998)
 - [Johs Salinas](https://github.com/johssalinas) -Johs Salinas
 - [Mateo Romera](https://github.com/gmateo404) -- gmateo404
