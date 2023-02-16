@@ -19,3 +19,4 @@ Este diplomado es para aprender Js y la libreria de React Js.
 - [Alvaro Gomez](https://github.com/Alvarog0218) -- Alvarog0218
 - [Liz Villabona](https://github.com/lizvillabona)
 - [Jorge Rodriguez](https://github.com/Jarcord) -- Jarcord 
+- [Wilmar Guevara](https://github.com/Wilmar85) 
