@@ -1,0 +1,22 @@
+body{
+    background-color: aqua;
+    }
+  
+
+@font-face {
+    font-family: 'Simple';
+    src: url("./fuentes/Simple.otf");
+}
+
+.Simple {
+    font-family: 'simple';
+}
+
+@font-face {
+    font-family: 'Baby';
+    src: url("./fuentes/Baby.otf");
+}
+
+.Baby {
+    font-family: 'Baby';
+}
