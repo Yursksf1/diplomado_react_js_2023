@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.container{
+    padding: 30px;
+    margin-inline: 20%;
+    background-color: cadetblue;
+}
