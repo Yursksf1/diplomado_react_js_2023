@@ -1,0 +1,10 @@
+15 feb 2023
+-------------------------------------------------------------------------------------------------
+Educación Continua UNC-cuatro21:06
+- Agregar una imagen de usted de perfil 
+-  Agregar estilo con css border redondeado. ajusten el tamaños
+
+- Agregar nuevas imagenes a la seccion de herramientas trabajandas -- agregar sus propios estilos
+
+- agregar color al fondo
+-----------------------------------------------------------------------------------------------------
