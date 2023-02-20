@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(141, 189, 255);
+}
+
+@font-face {
+    font-family: 'rotobo_font';
+    src: url("./static/fonts/roboto/Roboto-Black.ttf");
+}
+
+.font_roboto {
+    font-family: 'rotobo_font';
+}
+
+@font-face {
+    font-family: 'font_abstract';
+    src: url("./static/fonts/a_abstract_groovy/aAbstractGroovy.ttf");
+}
+
+.font_abstract {
+    font-family: 'font_abstract';
+}
+
+.texto_ejemplo {
+    font-family: 'rotobo_font';
+    font-size: 30px;
+}
