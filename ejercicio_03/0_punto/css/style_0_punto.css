@@ -1,0 +1,15 @@
+h3{
+    color: antiquewhite;
+    margin-bottom: 30px;
+}
+
+li{
+    color: wheat;
+    list-style-type: none;
+    text-align: left;
+    margin-top: 15px;
+}
+
+li span{
+    font-weight: bold;
+}

@@ -1,0 +1,22 @@
+.johs_foto{
+    height: 10%;
+    width: 30%;
+    border-radius: 20%;
+    border: 10px dotted cadetblue;
+}
+
+h1, .descripcion{
+    color: #ffffff;
+}
+
+.subtitulo{
+    color: #c2bfbf;
+}
+
+.container_subtitulo{
+    background-color: #044431;
+    padding: 20px;
+    border-radius: 20px;
+    margin-inline: 30%;
+    margin-bottom: 20px;
+}    
