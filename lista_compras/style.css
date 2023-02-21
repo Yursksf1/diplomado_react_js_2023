@@ -1,0 +1,48 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+}
+
+h1{
+    padding-top: 10px;
+    text-align: center;
+}
+.container{
+    padding-top: 25px;
+    gap: 15px;
+}
+
+.ZONA1{
+    display: grid;
+    justify-content: center;
+    width: 100%;  
+    padding: 20px;
+    color: rgb(12, 1, 1);
+    background-color: rgb(195, 210, 238);
+}
+
+.ZONA1 .ZONA img{
+    display: grid;
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    justify-content: left;
+    border: solid 2px white;
+}
+.ZONA1 .ZONA{
+    display: flex;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: left;
+    gap: 20px;
+}
+.ZONA1 .ZONA h3{
+    font-size: 25px;
+}
+.ZONA1 h2{
+    text-align: center;
+}
