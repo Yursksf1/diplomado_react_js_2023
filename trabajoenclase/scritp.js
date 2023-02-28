@@ -1,4 +1,4 @@
-edad=70
+edad=parseInt(prompt('ingrese la edad:'))
 
 lim_bebe=0
 lim_ma_bebe=3
