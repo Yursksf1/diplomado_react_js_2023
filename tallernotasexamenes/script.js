@@ -1,9 +1,9 @@
 
-examen1=81
-examen2=50
-examen3=80
+let examen1=81
+let examen2=50
+let examen3=80
 
-examen=(examen1+examen2+examen3)/3
+let examen=(examen1+examen2+examen3)/3
 
 lim_exce=100
 lim_ma_exce=90
