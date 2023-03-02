@@ -20,8 +20,8 @@ console.log('==> Fin del programa')
 
 
 //  con base al codigo anterior, definir un programa para determinar el grupo que pertenece las personas segun su edad
-// Bebes : 0 - 3
-// Niños : 3 - 11
-// Adolecentes: 11 - 18
-// Adultos: 18 - 60
-// Adultos mayores: 60 o más
+// Bebes : (0 - 3]
+// Niños : (3 - 11]
+// Adolecentes: (11 - 18]
+// Adultos: (18 - 60]
+// Adultos mayores: (60 o más]
