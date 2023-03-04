@@ -277,29 +277,10 @@ for (let index = 0; index < tiempoMeses; index++) {
     saldoDeuda = saldoDeuda - saldoDiferido
     console.log('saldoDeuda', saldoDeuda)
     console.log("")
-    
+    break
 }
-
-validacion = true
-contador = 0 
-while (validacion) {
-    console.log('esta es mi logica del while')
-    contador = contador + 1 
-    if (contador>10) {
-        break
-    }
-}
-
 console.log(`Me hicieron un descuento de: ${descuentoFinal} por la compra del T.V`)
 console.log(`Al final de este prestamos paguen: ${totalInteresPagado} de intereses`)
 
 
 console.log('FIN')
-
-
-// Haciendo uso de la estructura ciclica while 
-// definir un programa que me ayude a calcualar la cantidad de meses que debo dejar una inversion
-// monto inicial: 50'000.000
-// tasa de interes: 3% M.V
-// monto final: 100.000.000
-// cuanto tiempo debo esperar para tener el monto final... tiempo ? 
