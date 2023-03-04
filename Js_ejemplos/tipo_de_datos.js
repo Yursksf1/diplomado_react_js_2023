@@ -120,9 +120,10 @@ console.log('FIN')
 console.log('INICIO')
 const valorProducto = 3500000                                   // Valor del producto sin descuento
 const descuentoPorcentual = 20                                  // descuento promocion 
-const valorPrestamo = valorProducto * (1 - (descuentoPorcentual/100))
-// const ValorPrestamo = valorProducto - (valorProducto * (descuentoPorcentual/100)
-const tiempoMeses = 12
+const descuentoFinal = valorProducto * (descuentoPorcentual/100)
+// const valorPrestamo = valorProducto * (1 - (descuentoPorcentual/100))
+const valorPrestamo = valorProducto - descuentoFinal
+const tiempoMeses = 24
 const tasaInteresMensual = 3
 
 let saldoDeuda = valorPrestamo
@@ -262,11 +263,13 @@ console.log('saldoDiferido', saldoDiferido)
 
 // saldoDeuda = saldoDeuda - saldoDiferido
 // console.log('saldoDeuda', saldoDeuda)
-
+let totalInteresPagado = 0
 for (let index = 0; index < tiempoMeses; index++) {
     // staments operacion que estoy copiando n veses 
     interesMensual = saldoDeuda*tasaInteresMensual/100
+    console.log('saldoDiferido', saldoDiferido)
     console.log('interesMensual', interesMensual)
+    totalInteresPagado = totalInteresPagado + interesMensual
 
     valorCuota = saldoDiferido + interesMensual
     console.log('valorCuota', valorCuota)
@@ -275,6 +278,8 @@ for (let index = 0; index < tiempoMeses; index++) {
     console.log('saldoDeuda', saldoDeuda)
     console.log("")
 }
+console.log(`Me hicieron un descuento de: ${descuentoFinal} por la compra del T.V`)
+console.log(`Al final de este prestamos paguen: ${totalInteresPagado} de intereses`)
 
 
 console.log('FIN')
