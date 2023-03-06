@@ -36,7 +36,7 @@ img{
     gap: 1rem;
     grid-auto-flow: 22rem;
     grid-auto-flow: dense;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 }
 
 h3{

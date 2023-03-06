@@ -1,0 +1,160 @@
+:root{
+    --amarillo:#f9c911;
+    --blanco: #faf1e4;
+    --gris: #504f4f;
+    --negro: #232323
+}
+
+body{
+    background-color: #b3a99d;
+}
+
+.descripcion{
+    color: var(--amarillo);
+}
+
+.foto-perfil img{
+    width: 100%;
+}
+
+h1{
+    font-size: 35px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+a, p{
+    text-decoration: none;
+}
+
+.color-white, .section-left p {
+    color: var(--blanco);
+}
+
+.color-gray{
+    color: var(--gris);
+}
+
+.section-left{
+    background-color: #232323;
+}
+
+.section-left .container h2, .section-left .container .img-block, .section-left .container p{
+    margin-bottom: 3px;
+}
+
+.section-right{
+    background-color: var(--blanco);
+}
+
+.container{
+    padding: 3px 20px 20px 20px;
+}
+
+@media screen and (min-width: 400px) {
+    .canva{
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template-columns: 40% 60%;
+        padding: 0%;
+    }
+  }
+  
+@media screen and (min-width: 1200px) {
+    .canva{
+        display: grid;
+        grid-auto-flow: dense;
+        grid-template-columns: 35% 65%;
+        padding:0 20%;
+    }
+}
+
+.container-name h1{
+    font-weight: lighter;
+}
+
+.container-name h1 span {
+    font-weight: bold;
+}
+
+.container-name h2{
+    color: var(--blanco);
+    font-weight: lighter;
+}
+
+.container-name{
+    background-color: #f9c911;
+    text-align: center;
+    padding: 10px 20px;
+    margin: 50px 30px 0px -30px;
+}
+
+.section-right h3{
+    color: var(--amarillo);
+    font-weight: bold;
+    margin: 3px;
+}
+
+.section-right h4{
+    font-weight: bold;
+    color: var(--negro);
+    margin: 3px;
+}
+.section-right p{
+    color: var(--gris);
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+
+
+.marco-amarillo{
+    background-color: var(--amarillo);
+    padding: 5px 22px;
+    color: var(--negro);
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 3px 50% 3px 3px;
+}
+
+.img-block{
+    display: flex;
+}
+
+.img-block img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.size-20{
+    font-size: 20px;
+}
+
+.grid-referencias{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.titulo-grid{
+    grid-column: 1/3;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.btn-volver{
+    grid-column: 1/3;
+    background-color: var(--amarillo);
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    border: 3px solid var(--negro);
+    text-align: center;
+    text-decoration: none;
+    color: var(--negro);
+    font-size: 20px;
+}
