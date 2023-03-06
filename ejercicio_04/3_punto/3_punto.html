@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="3_punto.css">
+    <title>Ejercicios en Js</title>
+</head>
+<body>
+
+    <p id="1_punto"></p><br>
+    <p id="2_punto"></p><br>
+    <p id="3_punto"></p>
+    <p id="3_punto2"></p><br>
+    <p id="4_punto1"></p>
+    <p id="4_punto2"></p>
+    <p id="4_punto3"></p>
+    <p id="4_punto4"></p><br>
+    <a href="../ejercicio_04.html" class="btn-volver">Volver</a>
+    <script>
+        //Primer Punto
+        var camila = 7, martina = 10;
+        var total = camila + martina;
+        document.getElementById("1_punto").innerHTML = "Camila tiene " + camila + " años, y Martina tiene " + martina + " años, para un total de " + total + " años.";
+
+        //Segundo Punto
+        var marcos = 11, gabriel = 12, lucas = 8;
+        var promedio = (marcos + gabriel + lucas) / 3;
+        document.getElementById("2_punto").innerHTML = "El promedio de los tres alumnos es " + promedio.toFixed(1) + ".";
+
+        //Tercer Punto
+        var examen1 = 50, examen2 = 80, examen3 = 30, examen4;
+        var promedio = (examen1 + examen2 + examen3) / 3;
+        examen4 = (60*4) - (examen1 + examen2 + examen3);
+        document.getElementById("3_punto2").innerHTML = "Juan necesita " + examen4.toFixed(1) + " para aprobar el curso." ;
+
+        //Cuarto Punto
+        var x = [1,1,0];
+        var y = [1,0,1];
+        var z = [0,1,1];
+        var r = [10,20,24]
+        var Da;
+        var Dx;
+        var Dy;
+        var Dz;
+        var conejo;
+        var gato;
+        var perro;
+        var suma;
+        
+        Da = ((x[0]*y[1]*z[2]) + (x[1]*y[2]*z[0]) + (x[2]*y[0]*z[1])) - ((z[0]*y[1]*x[2]) + (z[1]*y[2]*x[0]) + (z[2]*y[0]*x[1]));
+        Dx = ((r[0]*y[1]*z[2]) + (r[1]*y[2]*z[0]) + (r[2]*y[0]*z[1])) - ((z[0]*y[1]*r[2]) + (z[1]*y[2]*r[0]) + (z[2]*y[0]*r[1]));
+        Dy = ((x[0]*r[1]*z[2]) + (x[1]*r[2]*z[0]) + (x[2]*r[0]*z[1])) - ((z[0]*r[1]*x[2]) + (z[1]*r[2]*x[0]) + (z[2]*r[0]*x[1]));
+        Dz = ((x[0]*y[1]*r[2]) + (x[1]*y[2]*r[0]) + (x[2]*y[0]*r[1])) - ((r[0]*y[1]*x[2]) + (r[1]*y[2]*x[0]) + (r[2]*y[0]*x[1]));
+
+        conejo = Dx/Da;
+        gato = Dy/Da;
+        perro = Dz/Da;
+        suma = conejo + gato + perro;
+
+        document.getElementById("4_punto1").innerHTML = "El valor de conejo es " + conejo.toFixed(0) + ".";
+        document.getElementById("4_punto2").innerHTML = "El valor de gato es " + gato.toFixed(0) + ".";
+        document.getElementById("4_punto3").innerHTML = "El valor de perro es " + perro.toFixed(0) + ".";
+        document.getElementById("4_punto4").innerHTML = "El valor de la suma es " + suma.toFixed(0) + ".";
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+.nav-bg{
+    background-color: rgb(4, 68, 49);
+    border-radius: 10px;
+    border: #212121 solid 5px;
+}
+
+.navegacion-principal{
+    display: flex;
+    flex-direction: row;
+}
+
+.navegacion-principal a{
+    display: block;
+    flex: content;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+.navegacion-principal a:hover{
+    background-color: #E9F283;
+    color: #212121;
+
+}
