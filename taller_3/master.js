@@ -130,4 +130,44 @@ console.log(`La longitud es: ${longitud}`);
 console.log(``);
 
 console.log(`Fin ==> Crear una lista de ingredientes en Javascript`)
-console.log(``)
+console.log(``);
+
+//fin ejercicio de listas
+
+console.log(`Inicio ==> Haciendo uso del lenguaje de programacion JavaScript. Realizar un programa para calcular el gasto total para una compra de vivienda con las siguientes condiciones`);
+let valorInmueble = 230000000;
+let gastoEscrituracion = 8000000;
+let tasaInteres = 1.5/100;
+let valorAhorrado = 50000000;
+let ahorroCesantias = 70000000;
+let numeroPagos = 20 * 12;
+let valorPrestamo = valorInmueble + gastoEscrituracion -valorAhorrado - ahorroCesantias; 
+let cuotaSinInteres = valorPrestamo / numeroPagos
+let CuotaConIntereses = 0;
+let interesMensual = 0;
+let totalInteresPagado = 0;
+let valorInicial = valorPrestamo;
+
+for (numeroPagos = 1; numeroPagos <= 240; numeroPagos++) {
+    
+    interesMensual = valorInicial * tasaInteres
+    console.log('Cuota sin interes', cuotaSinInteres)
+    console.log('interes Mensual', interesMensual)
+    totalInteresPagado = totalInteresPagado + interesMensual
+
+    CuotaConIntereses = cuotaSinInteres + interesMensual
+    console.log(`El valor de la cuota No ${numeroPagos} es ${CuotaConIntereses}`)
+
+    valorInicial = valorInicial - cuotaSinInteres
+    console.log('saldo de Deuda', valorInicial)
+    console.log("")
+    
+}
+console.log(`Suma total intereses pagados ${totalInteresPagado}`)
+console.log();
+console.log(`El valor del prestamo es: ${valorPrestamo}`);
+console.log();
+console.log(`El valor de la cuota sin intereses es: ${cuotaSinInteres}`);
+console.log();
+console.log(`Suma total al final del prestamo ${totalInteresPagado + valorPrestamo}`)
+console.log(`Fin ==> Haciendo uso del lenguaje de programacion JavaScript. Realizar un programa para calcular el gasto total para una compra de vivienda con las siguientes condiciones`);
