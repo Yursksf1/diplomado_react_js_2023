@@ -1,17 +1,8 @@
-console.log('hola mundo otra vez desde la consola')
+// Vanilla Js
+document.getElementById("titulo").textContent = "Mi nuevo texto"
+document.getElementsByClassName("texto")[0].textContent = "este es mi nuevo texto"
 
-// alert("este es un mensaje que vere sin necesidad de abrir la consola")
 
-a = window.prompt("Inserta tu nombre: ")
-// alert(`Hola ${a}, bienvenido`)
-
-document.write("Hola Mundo! <br>");
-document.write(`Hola ${a}, bienvenido`);
-
-document.write("<ul>");
-
-document.write("<li> manzana </li>");
-document.write("<li> pera </li>");
-document.write("<li> patilla </li>");
-
-document.write("</ul>");
+// JQuery
+$("#titulo").text("Title")
+$(".texto").text("new Title")
