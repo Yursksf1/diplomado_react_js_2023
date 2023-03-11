@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Contador</h1>
+<h2>cronometro con The setInterval() Js</h2>
+
+<p id="demo" style="font-size: 50px; color:blueviolet; margin: 100px;">0</p>
+<button id="stop"> detener</button>
+<button id="continue"> continuar</button>
+
+<script>
+let myInterval = null
+window.onload = (evnt) => {
+    init()
+};
+
+function init(){    
+    startContardor()
+}
+
+
+function startContardor() {
+    myInterval = setInterval(aumentarContador, 1000);
+}
+
+function aumentarContador() {
+    const contador = document.getElementById("demo").innerHTML
+    document.getElementById("demo").innerHTML = parseInt(contador) + 1;
+}
+
+
+document.getElementById("stop").addEventListener("click", 
+    () => clearInterval(myInterval)
+)
+document.getElementById("continue").addEventListener("click", startContardor
+)
+
+
+</script>
+
+</body>
+</html>
