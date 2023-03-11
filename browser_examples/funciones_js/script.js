@@ -69,3 +69,15 @@ console.log(getAreaCuadrado(12))
 //  definir las funciones para hallar el area y perimetros de las figuras geometricas propuestas. (cuadrdo, rectangulo, circulo)
 //  hacer los llamados correspondientes 
 //  sugerencia: usar console.log o document.write para mostrar mensajes en consola o en el navegador. 
+
+
+
+
+
+function init(){
+    console.log('some is here')
+}
+
+window.onload = (evnt) => {
+    init()
+};
