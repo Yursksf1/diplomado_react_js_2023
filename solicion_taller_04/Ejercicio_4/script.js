@@ -111,7 +111,7 @@ cambiarMensajeElemento("show_palabra_o", palabraOculta)
 // 4.4) obtener letras aleatorias sin repeticion 
 // X 5) contador de intentos 
 // X 5.1 funcion para aumenta  el contador de intentos en caso de que sea un intento fallido
-// 5.2 validar si una letra se encuentra dentro de la palaba seleccion 
-// 5.3 funcion que actualice la palabra que se muestra en el html con las letras que ya fueron adivinadas
-// 6) agregar un set time que si pasa 3 min se acaba el juego
-// 7) agregar una validacion de que si hay mas de 10 intentos fallidos entonces se acaba el juego
+// X 5.2 validar si una letra se encuentra dentro de la palaba seleccion 
+// X 5.3 funcion que actualice la palabra que se muestra en el html con las letras que ya fueron adivinadas
+// X 6) agregar un set time que si pasa 3 min se acaba el juego
+// X 7) agregar una validacion de que si hay mas de 10 intentos fallidos entonces se acaba el juego
