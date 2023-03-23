@@ -37,16 +37,16 @@ function App() {
   const renderCelebracion = celebraciones.map(celebracion => {
     return (
       <div>
-        <h1>
+        <h1 className="titulo">
           {celebracion.titulo}
         </h1>
-        <h2>
+        <h2 className="subtitulo">
           {celebracion.fecha}
         </h2>
-        <p>
+        <p className="texto">
           {celebracion.descripcion}
         </p>
-        <img src={celebracion.imagen} />
+        <img className="imagen" src={celebracion.imagen} />
       </div>
     )
   } )
