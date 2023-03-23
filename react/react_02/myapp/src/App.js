@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function getCelebraciones() {
   const celebraciones = [
     {
       "fecha": "2 - abril - 2023",
@@ -50,9 +50,13 @@ function App() {
       </div>
     )
   } )
+  return renderCelebracion
+}
+
+function App() {
   return (
     <div className="App">
-      {renderCelebracion }
+      { getCelebraciones() }
     </div>
   );
 }
