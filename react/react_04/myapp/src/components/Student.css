@@ -1,0 +1,19 @@
+.student {
+    margin-bottom: 50px;
+    margin-left: 30px;
+
+}
+
+.student p {
+    color: blueviolet;
+}
+
+.student a {
+    color: rgb(59, 176, 196);
+}
+
+.student img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}

@@ -4,9 +4,12 @@ import './App.css';
 import React, { useState } from 'react';
 
 function App() {
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(100);
 
-  function handleClick() {
+  function handleClickReduce() {
+    setCounter(counter - 1);
+  }
+  function handleClickAumentar() {
     setCounter(counter + 1);
   }
 
@@ -14,7 +17,8 @@ function App() {
     <div>
       <h1> Contador </h1>
       <p>El contador es {counter}</p>
-      <button onClick={handleClick}>Incrementar</button>
+      <button onClick={handleClickReduce}>Reducir</button>
+      <button onClick={handleClickAumentar}>Aumentar</button>
     </div>
   );
 }
