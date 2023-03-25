@@ -62,3 +62,16 @@ function App() {
 }
 
 export default App;
+
+
+/*
+En ReactJS, un componente es una pieza de código reutilizable que encapsula la funcionalidad y 
+la interfaz de usuario de una parte de una aplicación web. Los componentes pueden ser simples o 
+complejos, y se pueden combinar para formar la estructura de una aplicación web.
+
+Cada componente de ReactJS es una clase o una función que recibe ciertas propiedades (props) 
+como entrada y devuelve un elemento de React (React element) que describe lo que se debe 
+renderizar en la interfaz de usuario. Los elementos de React son objetos que describen 
+lo que se debe mostrar en la pantalla, incluyendo información sobre los atributos, 
+los estilos y los hijos de un elemento.
+*/
