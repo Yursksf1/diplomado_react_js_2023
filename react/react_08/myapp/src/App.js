@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-// import { Navbar, Nav } from 'react-bootstrap';
+import { Navbar, Nav } from 'react-bootstrap';
 import { BsFillHouseFill, BsFillBellFill, BsFillPersonFill } from 'react-icons/bs';
 import { AiOutlineWhatsApp, AiFillGithub, AiOutlineMail } from "react-icons/ai";
 import Contact from './components/Contact';
+import Testimonio from './components/Testimonio';
 
 
 const CONTACTOS = [
@@ -61,10 +62,30 @@ const CONTACTOS = [
 
 ] 
 
+const TESTIMONIO = [
+  {
+    name:'Liz Villabona',
+    text: "Este producto es chevere",
+    img:'https://avatars.githubusercontent.com/u/125324104?v=4',
+  },  
+  {
+    name:'Lizy Villabona',
+    text: "Este producto es bonito",
+    img:'https://avatars.githubusercontent.com/u/125324104?v=4',
+  },
+] 
+
+
 
 const getContactos = (contactos) => {
   return contactos.map(contacto => {
       return <Contact contacto={contacto} />
+  })
+}
+
+const getTestimonios = (testimonios) => {
+  return testimonios.map(testimonio => {
+      return <Testimonio testimonio={testimonio} />
   })
 }
 
@@ -73,10 +94,16 @@ const getContactos = (contactos) => {
 function App() {
   return (
     <div>
-        Contactame
+        Contacto
         <div className='contactos'>
           { getContactos(CONTACTOS) }
         </div>
+
+        Testimonio
+        <div className='testimonios'>
+          { getTestimonios(TESTIMONIO) }
+        </div>
+
     </div>
   )
 }

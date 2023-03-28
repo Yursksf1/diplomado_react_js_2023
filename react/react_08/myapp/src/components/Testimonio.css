@@ -1,0 +1,18 @@
+.testimonio {
+    margin-left: 50px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgb(252, 230, 163);
+}
+
+.testimonio .user { 
+    display: flex;
+    max-height: 50px;
+    justify-content: space-between;
+}
+
+.testimonio img {
+    max-height: 50px;
+    max-width: 50px;
+    border-radius: 50%;
+}
