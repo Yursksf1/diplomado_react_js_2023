@@ -1,0 +1,40 @@
+.contact {
+    margin-bottom: 50px;
+    margin-left: 30px;
+    max-width: 300px;
+    background-color: aquamarine;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(68, 68, 68, 0.241);
+}
+
+.contact p {
+    color: rgb(7, 2, 157);
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.contact .profile {
+    margin-top: 5px;
+    font-style: italic;
+    font-size: 15px;
+    color: rgb(107, 107, 107);
+}
+
+.contact a {
+    color: black;
+}
+
+
+.contact img {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.contact .resources {
+    text-align: center;
+
+}
