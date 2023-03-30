@@ -24,18 +24,15 @@ function MyForm() {
   const handleSubmit = (event) => {
     event.preventDefault();
     // Aquí se puede enviar la información del formulario a un servidor en este caso lo guardaremos en un state que vamos a listar
-    console.log('formData', formData)
-    console.log('listData', listData)
-
-
-
+    
+    // guarda el valor ingresado en el formulario a la lista Data
     setListData([...listData, formData]);
-
+    
+    // limpia la informacion que esta en el formulario
     setFormData({
         name: '',
         date: '',
         message: ''
-
     });
   }
 
