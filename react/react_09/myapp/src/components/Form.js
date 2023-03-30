@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Form.css';
 
 function MyForm() {
   const [formData, setFormData] = useState({
@@ -37,38 +38,52 @@ function MyForm() {
   }
 
   const rendeList = lista => {
-    return lista.map(elemento => {
+    const tableHead = (
+        <tr>
+            <th>NAME</th>
+            <th>DATE</th>
+            <th>MESSAGE</th>
+        </tr>
+    )
+    const contenido = lista.map(elemento => {
         return (
-            <div>
-                <p>name: {elemento.name}</p>
-                <p>date: {elemento.date}</p>
-                <p>message: {elemento.message}</p>
+            <tr>
+                <td> {elemento.name}</td>
+                <td> {elemento.date}</td>
+                <td> {elemento.message}</td>
                 <br/>
-            </div>
+            </tr>
         )
     })
+    return (
+        <div className='divTable'>
+            <table className='tabla'>
+                {tableHead}
+                {contenido}
+            </table>
+        </div>
+    )
   }
 
   return (
-    <div>
-        <form onSubmit={handleSubmit}>
-        <label>
-            Nombre:
-            <input type="text" name="name" value={formData.name} onChange={handleChange} />
-        </label>
-        <br></br>
-        <label>
-            Fecha:
-            <input type="date" name="date" value={formData.date} onChange={handleChange} />
-        </label>
-        <br></br>
-        <label>
-            Mensaje:
-            <textarea name="message" value={formData.message} onChange={handleChange} />
-        </label>
-        <br></br>
-
-        <button type="submit">Enviar</button>
+    <div className='content'>
+        <form className='formulario' onSubmit={handleSubmit}>
+            <label>
+                Nombre:
+                <input type="text" name="name" value={formData.name} onChange={handleChange} />
+            </label>
+            <br></br>
+            <label>
+                Fecha:
+                <input type="date" name="date" value={formData.date} onChange={handleChange} />
+            </label>
+            <br></br>
+            <label>
+                Mensaje:
+                <textarea name="message" value={formData.message} onChange={handleChange} />
+            </label>
+            <br></br>
+            <button type="submit">Enviar</button>
         </form>
         {listData ? rendeList(listData): null}
     </div>
