@@ -7,7 +7,12 @@ function MyForm() {
     message: ''
   });
 
-  const [listData, setListData] = useState([]);
+  const [listData, setListData] = useState([{
+    name: 'Yurley',
+    date: '2023-01-01',
+    message: 'Hello'
+
+}]);
 
   const handleChange = (event) => {
     setFormData({
@@ -21,15 +26,30 @@ function MyForm() {
     // Aquí se puede enviar la información del formulario a un servidor en este caso lo guardaremos en un state que vamos a listar
     console.log('formData', formData)
     console.log('listData', listData)
-    // setListData(
-    //     listData.concat(formData)
-    // )
+
+
+
+    setListData([...listData, formData]);
+
     setFormData({
         name: '',
         date: '',
         message: ''
 
     });
+  }
+
+  const rendeList = lista => {
+    return lista.map(elemento => {
+        return (
+            <div>
+                <p>name: {elemento.name}</p>
+                <p>date: {elemento.date}</p>
+                <p>message: {elemento.message}</p>
+                <br/>
+            </div>
+        )
+    })
   }
 
   return (
@@ -53,7 +73,7 @@ function MyForm() {
 
         <button type="submit">Enviar</button>
         </form>
-        {listData}
+        {listData ? rendeList(listData): null}
     </div>
   );
 }
