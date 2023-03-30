@@ -1,7 +1,9 @@
 .content {
     background-color: rgb(255, 236, 207);
     display: flex;
-    max-height: 300px;
+    justify-content: center;
+    gap: 50px;
+    height: 300px;
 }
 
 .divTable {
@@ -30,4 +32,8 @@
     text-align: left;
     background-color: #04AA6D;
     color: white;
+  }
+
+  .formulario {
+    text-align: center;
   }
