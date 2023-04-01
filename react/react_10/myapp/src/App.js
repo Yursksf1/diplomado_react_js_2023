@@ -4,20 +4,22 @@ function App() {
   const topRef = useRef(null);
   const bottomRef = useRef(null);
 
-  function handleClick() {
-    topRef.current.scrollIntoView({ behavior: 'smooth' });
+  function handleClickButtom() {
+    bottomRef.current.scrollIntoView({ behavior: 'smooth' });
   }
   function handleClickTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    topRef.current.scrollIntoView({ behavior: 'smooth' });
+
+    // window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   return (
     <div>
-      <button onClick={handleClick}>Scroll to buttom</button>
+      <button onClick={handleClickButtom}>Scroll abajo</button>
+      <div ref={topRef}>Top</div>
       <div style={{ height: '1000px' }}></div>
-      <div ref={topRef}>Top of page</div>
-      <button onClick={handleClickTop}>Scroll to top</button>
-
+      <div ref={bottomRef}>buttom</div>
+      <button onClick={handleClickTop}>Scroll arriba</button>
     </div>
   );
 }
