@@ -1,6 +1,21 @@
+body{
+    background-color: bisque;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    align-items: left;
+    justify-content: center;
+    margin: 0 20%;
+    background-color: #d3a873;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
 .btn-volver{
-    grid-column: 1/3;
-    background-color: beige;
+    background-color: #c8c885;
     padding: 20px;
     margin-top: 50px;
     border-radius: 10px;
