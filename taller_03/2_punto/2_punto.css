@@ -1,0 +1,18 @@
+body {
+  background-color: antiquewhite;
+  margin: 40px;
+}
+
+h1 {
+  color: blue;
+  text-align: center;
+}
+
+.volver {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
