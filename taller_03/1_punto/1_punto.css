@@ -1,0 +1,45 @@
+body {
+  background-color: antiquewhite;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+}
+
+table {
+  margin: auto;
+  margin-top: 50px;
+  border-collapse: collapse;
+}
+
+td {
+  background-color: #8eadc8;
+}
+
+th,
+td {
+  padding: 20px;
+  border: 1px solid black;
+}
+
+th {
+  background-color: #4969c2;
+}
+
+.resultado {
+  font-weight: bold;
+  color: blue;
+}
+
+
+.volver {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
