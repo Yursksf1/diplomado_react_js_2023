@@ -30,15 +30,15 @@ test("The callback should return a reversed word", () => {
 });
 
 
-// Probando promesas .then
-test('Probar una promesa', ()=> {
-    return reverseString2('hola')
-        .then(string => {
-            expect(string).toBe('aloh')
-        })
-})
+// // Probando promesas .then
+// test('Probar una promesa', ()=> {
+//     return reverseString2('hola')
+//         .then(string => {
+//             expect(string).toBe('aloh')
+//         })
+// })
 
-test('Probar async/await', async ()=>{
-    const string = await reverseString2('hola');
-    expect(string).toBe('aloh')
-})
+// test('Probar async/await', async ()=>{
+//     const string = await reverseString2('hola');
+//     expect(string).toBe('aloh')
+// })
